@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            dataGridView1 = new DataGridView();
+            dtgv_autores = new DataGridView();
             button4 = new Button();
             button3 = new Button();
             button2 = new Button();
@@ -38,13 +38,13 @@
             label2 = new Label();
             label1 = new Label();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtgv_autores).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(dataGridView1);
+            panel1.Controls.Add(dtgv_autores);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button3);
             panel1.Controls.Add(button2);
@@ -52,18 +52,18 @@
             panel1.Controls.Add(txt_name);
             panel1.Controls.Add(label2);
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 62);
+            panel1.Location = new Point(0, 66);
             panel1.Name = "panel1";
-            panel1.Size = new Size(624, 329);
+            panel1.Size = new Size(771, 329);
             panel1.TabIndex = 0;
             // 
-            // dataGridView1
+            // dtgv_autores
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 101);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(600, 228);
-            dataGridView1.TabIndex = 6;
+            dtgv_autores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgv_autores.Location = new Point(12, 101);
+            dtgv_autores.Name = "dtgv_autores";
+            dtgv_autores.Size = new Size(600, 228);
+            dtgv_autores.TabIndex = 6;
             // 
             // button4
             // 
@@ -134,14 +134,14 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Blue;
-            ClientSize = new Size(624, 391);
+            ClientSize = new Size(771, 395);
             Controls.Add(label1);
             Controls.Add(panel1);
             Name = "Form2";
             Text = "Form2";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtgv_autores).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -149,7 +149,7 @@
         #endregion
 
         private Panel panel1;
-        private DataGridView dataGridView1;
+        private DataGridView dtgv_autores;
         private Button button4;
         private Button button3;
         private Button button2;

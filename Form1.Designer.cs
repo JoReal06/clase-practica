@@ -30,7 +30,7 @@
         {
             label1 = new Label();
             panel1 = new Panel();
-            panel2 = new Panel();
+            Panel_pantalla = new Panel();
             btn_book = new Button();
             btn_author = new Button();
             panel1.SuspendLayout();
@@ -50,23 +50,24 @@
             // panel1
             // 
             panel1.BackColor = Color.Blue;
-            panel1.Controls.Add(panel2);
+            panel1.Controls.Add(Panel_pantalla);
             panel1.Controls.Add(btn_book);
             panel1.Controls.Add(btn_author);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(914, 440);
+            panel1.Size = new Size(910, 415);
             panel1.TabIndex = 1;
             // 
-            // panel2
+            // Panel_pantalla
             // 
-            panel2.BackColor = Color.White;
-            panel2.Location = new Point(180, 35);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(882, 415);
-            panel2.TabIndex = 3;
+            Panel_pantalla.BackColor = Color.White;
+            Panel_pantalla.Dock = DockStyle.Right;
+            Panel_pantalla.Location = new Point(176, 0);
+            Panel_pantalla.Name = "Panel_pantalla";
+            Panel_pantalla.Size = new Size(734, 415);
+            Panel_pantalla.TabIndex = 3;
             // 
             // btn_book
             // 
@@ -92,7 +93,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 440);
+            ClientSize = new Size(910, 415);
             Controls.Add(panel1);
             Name = "Form1";
             Text = "Form1";
@@ -107,6 +108,6 @@
         private Panel panel1;
         private Button btn_book;
         private Button btn_author;
-        private Panel panel2;
+        private Panel Panel_pantalla;
     }
 }

@@ -11,8 +11,8 @@ using clase_practica;
 namespace clase_practica.Migrations
 {
     [DbContext(typeof(LibraryContext))]
-    [Migration("20240515161044_Init")]
-    partial class Init
+    [Migration("20240515232656_new")]
+    partial class @new
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

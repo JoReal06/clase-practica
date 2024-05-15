@@ -21,14 +21,18 @@ namespace clase_practica
         {
             Author author = new Author();
             author.Name = txt_name.Text;
+            
             AuthorRepository authorRepository = new AuthorRepository();
             authorRepository.Add(author);
+            Refresh_data(authorRepository);
+
 
         }
 
-        void Refresh_data() 
+        void Refresh_data(AuthorRepository a) 
         {
-            
+            dtgv_autores.DataSource = null;
+            dtgv_autores.DataSource = a.GetAll();
         }
     }
 }

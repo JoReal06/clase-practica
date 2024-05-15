@@ -10,10 +10,12 @@ namespace clase_practica
         private void button1_Click(object sender, EventArgs e)
         {
             Form2 menu_author = new Form2();
-            menu_author.MinimizeBox = true;
-            menu_author.MaximizeBox = false;
-            menu_author.Visible = true;
-            menu_author.StartPosition = FormStartPosition.CenterParent;
+            menu_author.Size = Panel_pantalla.Size;
+            menu_author.TopLevel = false;
+            menu_author.FormBorderStyle = FormBorderStyle.None;
+            menu_author.Dock = DockStyle.Fill;
+            Panel_pantalla.Controls.Add(menu_author);
+            menu_author.Show();
         }
 
         private void btn_book_Click(object sender, EventArgs e)
