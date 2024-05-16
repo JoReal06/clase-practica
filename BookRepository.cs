@@ -8,6 +8,12 @@ namespace clase_practica
 {
     public class BookRepository:Repository<Book>
     {
-
+        public List<Book> SearchBooksByTitle(string searchText)
+        {
+            using (var context = new LibraryContext())
+            {
+                return context.Books.Where(book => book.Title.Contains(searchText)).ToList();
+            }
+        }
     }
 }

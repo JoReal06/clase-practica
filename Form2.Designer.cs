@@ -62,6 +62,7 @@
             dtgv_autores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgv_autores.Location = new Point(12, 101);
             dtgv_autores.Name = "dtgv_autores";
+            dtgv_autores.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dtgv_autores.Size = new Size(600, 228);
             dtgv_autores.TabIndex = 6;
             // 
@@ -73,6 +74,7 @@
             button4.TabIndex = 5;
             button4.Text = "Search";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -82,6 +84,7 @@
             button3.TabIndex = 4;
             button3.Text = "Delete";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -91,6 +94,7 @@
             button2.TabIndex = 3;
             button2.Text = "Update";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 

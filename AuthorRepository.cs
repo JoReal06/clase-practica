@@ -8,6 +8,9 @@ namespace clase_practica
 {
     public class AuthorRepository: Repository<Author>
     {
-       
+        public List<Author> SearchAuthorsByName(string name)
+        {
+            return GetAll().Where(author => author.Name.Contains(name)).ToList();
+        }
     }
 }

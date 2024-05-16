@@ -22,10 +22,12 @@ namespace clase_practica
         private void btn_book_Click(object sender, EventArgs e)
         {
             Form3 menu_book = new Form3();
-            menu_book.MinimizeBox = true;
-            menu_book.MaximizeBox = false;
-            menu_book.Visible = true;
-            menu_book.StartPosition = FormStartPosition.CenterParent;
+            menu_book.Size = Panel_pantalla.Size;
+            menu_book.TopLevel = false;
+            menu_book.FormBorderStyle = FormBorderStyle.None;
+            menu_book.Dock = DockStyle.Fill;
+            Panel_pantalla.Controls.Add(menu_book);
+            menu_book.Show();
         }
     }
 }
