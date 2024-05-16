@@ -2,6 +2,8 @@ namespace clase_practica
 {
     public partial class Form1 : Form
     {
+        private Form activeForm = null;
+
         public Form1()
         {
             InitializeComponent();
@@ -9,25 +11,29 @@ namespace clase_practica
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 menu_author = new Form2();
-            menu_author.Size = Panel_pantalla.Size;
-            menu_author.TopLevel = false;
-            menu_author.FormBorderStyle = FormBorderStyle.None;
-
-            menu_author.Dock = DockStyle.Fill;
-            Panel_pantalla.Controls.Add(menu_author);
-            menu_author.Show();
+            ShowFormInPanel(new Form2());
         }
 
         private void btn_book_Click(object sender, EventArgs e)
         {
-            Form3 menu_book = new Form3();
-            menu_book.Size = Panel_pantalla.Size;
-            menu_book.TopLevel = false;
-            menu_book.FormBorderStyle = FormBorderStyle.None;
-            menu_book.Dock = DockStyle.Fill;
-            Panel_pantalla.Controls.Add(menu_book);
-            menu_book.Show();
+            ShowFormInPanel(new Form3());
+        }
+
+        private void ShowFormInPanel(Form formToShow)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+
+            activeForm = formToShow;
+            formToShow.TopLevel = false;
+            formToShow.FormBorderStyle = FormBorderStyle.None;
+            formToShow.Dock = DockStyle.Fill;
+            Panel_pantalla.Controls.Add(formToShow);
+            Panel_pantalla.Tag = formToShow;
+            formToShow.BringToFront();
+            formToShow.Show();
         }
     }
 }

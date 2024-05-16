@@ -56,16 +56,16 @@
             panel1.Controls.Add(txt_title);
             panel1.Controls.Add(label2);
             panel1.Dock = DockStyle.Bottom;
-            panel1.Location = new Point(0, 87);
+            panel1.Location = new Point(0, 101);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 363);
+            panel1.Size = new Size(800, 349);
             panel1.TabIndex = 0;
             // 
             // dtgv_books
             // 
             dtgv_books.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgv_books.Dock = DockStyle.Bottom;
-            dtgv_books.Location = new Point(0, 135);
+            dtgv_books.Location = new Point(0, 121);
             dtgv_books.Name = "dtgv_books";
             dtgv_books.Size = new Size(800, 228);
             dtgv_books.TabIndex = 10;
@@ -150,7 +150,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(309, 21);
+            label1.Location = new Point(313, 9);
             label1.Name = "label1";
             label1.Size = new Size(82, 40);
             label1.TabIndex = 4;
