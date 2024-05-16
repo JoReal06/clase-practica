@@ -13,6 +13,7 @@ namespace clase_practica
             menu_author.Size = Panel_pantalla.Size;
             menu_author.TopLevel = false;
             menu_author.FormBorderStyle = FormBorderStyle.None;
+
             menu_author.Dock = DockStyle.Fill;
             Panel_pantalla.Controls.Add(menu_author);
             menu_author.Show();
